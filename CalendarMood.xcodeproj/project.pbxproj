@@ -13,6 +13,8 @@
 		BA993A4D2ADD53290000FCC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA993A4C2ADD53290000FCC7 /* ViewController.swift */; };
 		BA993A522ADD532A0000FCC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA993A512ADD532A0000FCC7 /* Assets.xcassets */; };
 		BA993A552ADD532A0000FCC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA993A532ADD532A0000FCC7 /* LaunchScreen.storyboard */; };
+		BAC326B02ADD59C7007497AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAC326B22ADD59C7007497AE /* Localizable.strings */; };
+		BAF67ACB2ADD5CB10002B59D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF67ACA2ADD5CB10002B59D /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		BA993A512ADD532A0000FCC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA993A542ADD532A0000FCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA993A562ADD532A0000FCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAC326B12ADD59C7007497AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BAC326B32ADD5A0C007497AE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BAC326B42ADD5A0C007497AE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BAF67ACA2ADD5CB10002B59D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +75,24 @@
 		BA993A472ADD53290000FCC7 /* CalendarMood */ = {
 			isa = PBXGroup;
 			children = (
+				BAC326AF2ADD593F007497AE /* Localizable */,
 				BA993A482ADD53290000FCC7 /* AppDelegate.swift */,
 				BA993A4A2ADD53290000FCC7 /* SceneDelegate.swift */,
 				BA993A4C2ADD53290000FCC7 /* ViewController.swift */,
 				BA993A512ADD532A0000FCC7 /* Assets.xcassets */,
 				BA993A532ADD532A0000FCC7 /* LaunchScreen.storyboard */,
 				BA993A562ADD532A0000FCC7 /* Info.plist */,
+				BAF67ACA2ADD5CB10002B59D /* Extension.swift */,
 			);
 			path = CalendarMood;
+			sourceTree = "<group>";
+		};
+		BAC326AF2ADD593F007497AE /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				BAC326B22ADD59C7007497AE /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		BD1D5FDB6C5350D5F33A2510 /* Pods */ = {
@@ -85,7 +101,6 @@
 				1432D74D158A7FFC5F342AD9 /* Pods-CalendarMood.debug.xcconfig */,
 				B1D23FE29AA83E51E75C2BD5 /* Pods-CalendarMood.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -133,6 +148,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = BA993A3C2ADD53290000FCC7;
 			productRefGroup = BA993A462ADD53290000FCC7 /* Products */;
@@ -150,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA993A552ADD532A0000FCC7 /* LaunchScreen.storyboard in Resources */,
+				BAC326B02ADD59C7007497AE /* Localizable.strings in Resources */,
 				BA993A522ADD532A0000FCC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +223,7 @@
 				BA993A4D2ADD53290000FCC7 /* ViewController.swift in Sources */,
 				BA993A492ADD53290000FCC7 /* AppDelegate.swift in Sources */,
 				BA993A4B2ADD53290000FCC7 /* SceneDelegate.swift in Sources */,
+				BAF67ACB2ADD5CB10002B59D /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +234,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				BA993A542ADD532A0000FCC7 /* Base */,
+				BAC326B32ADD5A0C007497AE /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BAC326B22ADD59C7007497AE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAC326B12ADD59C7007497AE /* en */,
+				BAC326B42ADD5A0C007497AE /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -228,6 +256,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -260,7 +289,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -275,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -291,6 +320,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -323,7 +353,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -332,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
