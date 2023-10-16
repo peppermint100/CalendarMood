@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E286D34701249E19A68BDC5 /* Pods_CalendarMood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF703537CC3735F81123CF7 /* Pods_CalendarMood.framework */; };
 		BA993A492ADD53290000FCC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA993A482ADD53290000FCC7 /* AppDelegate.swift */; };
 		BA993A4B2ADD53290000FCC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA993A4A2ADD53290000FCC7 /* SceneDelegate.swift */; };
 		BA993A4D2ADD53290000FCC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA993A4C2ADD53290000FCC7 /* ViewController.swift */; };
-		BA993A502ADD53290000FCC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA993A4E2ADD53290000FCC7 /* Main.storyboard */; };
 		BA993A522ADD532A0000FCC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA993A512ADD532A0000FCC7 /* Assets.xcassets */; };
 		BA993A552ADD532A0000FCC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA993A532ADD532A0000FCC7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1432D74D158A7FFC5F342AD9 /* Pods-CalendarMood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarMood.debug.xcconfig"; path = "Target Support Files/Pods-CalendarMood/Pods-CalendarMood.debug.xcconfig"; sourceTree = "<group>"; };
+		3EF703537CC3735F81123CF7 /* Pods_CalendarMood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarMood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D23FE29AA83E51E75C2BD5 /* Pods-CalendarMood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarMood.release.xcconfig"; path = "Target Support Files/Pods-CalendarMood/Pods-CalendarMood.release.xcconfig"; sourceTree = "<group>"; };
 		BA993A452ADD53290000FCC7 /* CalendarMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA993A482ADD53290000FCC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA993A4A2ADD53290000FCC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA993A4C2ADD53290000FCC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA993A4F2ADD53290000FCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA993A512ADD532A0000FCC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA993A542ADD532A0000FCC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA993A562ADD532A0000FCC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E286D34701249E19A68BDC5 /* Pods_CalendarMood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		019716F21D107110671D0E86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EF703537CC3735F81123CF7 /* Pods_CalendarMood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA993A3C2ADD53290000FCC7 = {
 			isa = PBXGroup;
 			children = (
 				BA993A472ADD53290000FCC7 /* CalendarMood */,
 				BA993A462ADD53290000FCC7 /* Products */,
+				BD1D5FDB6C5350D5F33A2510 /* Pods */,
+				019716F21D107110671D0E86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +72,21 @@
 				BA993A482ADD53290000FCC7 /* AppDelegate.swift */,
 				BA993A4A2ADD53290000FCC7 /* SceneDelegate.swift */,
 				BA993A4C2ADD53290000FCC7 /* ViewController.swift */,
-				BA993A4E2ADD53290000FCC7 /* Main.storyboard */,
 				BA993A512ADD532A0000FCC7 /* Assets.xcassets */,
 				BA993A532ADD532A0000FCC7 /* LaunchScreen.storyboard */,
 				BA993A562ADD532A0000FCC7 /* Info.plist */,
 			);
 			path = CalendarMood;
+			sourceTree = "<group>";
+		};
+		BD1D5FDB6C5350D5F33A2510 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1432D74D158A7FFC5F342AD9 /* Pods-CalendarMood.debug.xcconfig */,
+				B1D23FE29AA83E51E75C2BD5 /* Pods-CalendarMood.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA993A592ADD532A0000FCC7 /* Build configuration list for PBXNativeTarget "CalendarMood" */;
 			buildPhases = (
+				7CB3F7ED8D44C6FB99156380 /* [CP] Check Pods Manifest.lock */,
 				BA993A412ADD53290000FCC7 /* Sources */,
 				BA993A422ADD53290000FCC7 /* Frameworks */,
 				BA993A432ADD53290000FCC7 /* Resources */,
+				363575F77D4120406F28F803 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +151,52 @@
 			files = (
 				BA993A552ADD532A0000FCC7 /* LaunchScreen.storyboard in Resources */,
 				BA993A522ADD532A0000FCC7 /* Assets.xcassets in Resources */,
-				BA993A502ADD53290000FCC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		363575F77D4120406F28F803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarMood/Pods-CalendarMood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalendarMood/Pods-CalendarMood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalendarMood/Pods-CalendarMood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CB3F7ED8D44C6FB99156380 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalendarMood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA993A412ADD53290000FCC7 /* Sources */ = {
@@ -147,14 +212,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA993A4E2ADD53290000FCC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA993A4F2ADD53290000FCC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA993A532ADD532A0000FCC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +344,7 @@
 		};
 		BA993A5A2ADD532A0000FCC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1432D74D158A7FFC5F342AD9 /* Pods-CalendarMood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,9 +355,10 @@
 				INFOPLIST_FILE = CalendarMood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,14 +366,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peppermint100.CalendarMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BA993A5B2ADD532A0000FCC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D23FE29AA83E51E75C2BD5 /* Pods-CalendarMood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,9 +388,10 @@
 				INFOPLIST_FILE = CalendarMood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +399,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.peppermint100.CalendarMood;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
